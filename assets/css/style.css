@@ -1,0 +1,128 @@
+ body {
+    font-family : Arial, Helvetica, sans-serif;
+    margin : 0;
+    padding : 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background : url('../images/bohol.jpg') center/cover no-repeat;
+    opacity: 1;
+ }
+ body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for darkness */
+    z-index: -0.5; /* Place the pseudo-element behind other content */
+  }
+ header {
+    background-color: #161616;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 20px;
+    z-index: 1000; /* Ensure the header is above other elements */
+  }
+  
+  .header-title {
+    font-size: 3em; /* Set your desired font size */
+    letter-spacing: 2px; /* Set your desired letter spacing */
+    margin: 0px;
+  }
+  
+ .container {
+    width: 5%;
+    animation: fadeIn 1s ease-in-out;    
+ }
+ .splide__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    .splide__slide {
+    opacity: 0.6;
+  }
+  
+  
+  .splide__slide.is-active {
+    opacity: 1;
+  }
+  
+  ul{
+    list-style-type:none;
+  }
+ 
+  .splide__track{  
+    position: relative;
+    animation: popUp 2s ease-in;
+  }
+  
+  @keyframes popUp {
+    0%{
+      transform: scale(0);
+    }
+    50%{
+      transform: scale(1.2);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  @keyframes fadeOut {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  @keyframes mymove {
+    0%   {top: 0px; left: 0px; background: rgb(255, 255, 255);}
+    25%  {top: 0px; left: 100px; background: rgb(0, 0, 0);}
+    50%  {top: 100px; left: 100px; background: rgb(54, 54, 54);}
+    75%  {top: 100px; left: 0px; background: rgb(131, 131, 131);}
+    100% {top: 0px; left: 0px; background: rgb(255, 255, 255);}
+    
+  }
+
+  .carousel-content {
+    position: relative;
+  }
+
+  .carousel-content img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+  .text-overlay p {
+    font-family: cursive; /* Change to your preferred font */
+    font-size: 70px; /* Change to your preferred font size */
+    font-weight: bold; /* Change to your preferred font weight */
+    color: #ffffff; /* Change to your preferred text color */
+    margin: 0; /* Remove default margin for p element */
+    opacity: 0.7;
+  }
+  

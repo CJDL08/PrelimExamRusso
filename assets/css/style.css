@@ -35,6 +35,23 @@
     letter-spacing: 2px; /* Set your desired letter spacing */
     margin: 0px;
   }
+
+  .dashboard {
+    background-color: #161616;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 150px; /* Adjust top position based on your header height */
+    z-index: 1000; /* Ensure the dashboard is above other elements */
+  }
+  .dashboard a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1em; /* Adjust the font size as needed */
+  }
   
  .container {
     width: 5%;

@@ -1,0 +1,64 @@
+body {
+    font-family : Arial, Helvetica, sans-serif;
+    margin : 0;
+    padding : 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background : url('../images/bohol.jpg') center/cover no-repeat;
+    opacity: 1;
+}
+
+header {
+    background-color: #161616;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 20px;
+}
+
+.header-title {
+    font-size: 3em; /* Set your desired font size */
+    letter-spacing: 2px; /* Set your desired letter spacing */
+    margin: 0px;
+}
+
+.dashboard {
+    background-color: #161616;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 150px; /* Adjust top position based on your header height */
+}
+
+.dashboard a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1em; /* Adjust the font size as needed */
+}
+
+.context {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px; /* Adjust padding for better visual appearance */
+    background-color: rgba(94, 94, 94, 0.8); /* Semi-transparent white background */
+    border-radius: 10px; /* Rounded corners for the container */
+}
+
+footer {
+    background-color: #161616;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

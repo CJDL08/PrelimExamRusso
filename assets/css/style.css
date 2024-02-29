@@ -115,9 +115,21 @@
     bottom: 0;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 100%) {
     .container {
-      width: 90%; /* Adjust for smaller screens */
+      width: 100%; /* Adjust for smaller screens */
+    }
+    .splide__track{
+      width: 100%;
+    }
+    .carousel-content{
+      width: 100%;
+    }
+    .dashboard{
+      width: 100%;
+    }
+    .splide__slide{
+      width: 100%;
     }
 
     .header-title, .text-overlay p {

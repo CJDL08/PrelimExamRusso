@@ -62,3 +62,19 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+@media (max-width: 800px) {
+    .context {
+      width: 100%; /* Adjust for smaller screens */
+    }
+    body {
+        width: 100%;
+    }
+    .dashboard {
+        width: 100%;
+    }   
+
+    .header-title, .text-overlay p {
+      font-size: 5vw; /* Adjust font size for smaller screens */
+    }
+  }

@@ -18,7 +18,6 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    padding: 20px;
     z-index: 2;
 }
 
@@ -26,7 +25,6 @@ header {
     font-size: 3em; /* Set your desired font size */
     letter-spacing: 2px; /* Set your desired letter spacing */
     margin: 0px;
-    z-index: 3;
 }
 
 .dashboard {
@@ -36,14 +34,14 @@ header {
     color: white;
     position: fixed;
     width: 100%;
-    top: 150px; /* Adjust top position based on your header height */
-    z-index: 4;
+    top: 125px; /* Adjust top position based on your header height */
+    z-index: 3;
 }
 
 .dashboard a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 15px;
     font-size: 1em; /* Adjust the font size as needed */
 }
 
@@ -71,10 +69,10 @@ footer {
 @media (max-width: 800px) {
     .bookform {
       width: 90%; /* Adjust for smaller screens */
+      height: 70%;
+      top: 70%;
     }
-    body {
-        width: 100%;
-    }
+    
     .dashboard {
         width: 100%;
     }   

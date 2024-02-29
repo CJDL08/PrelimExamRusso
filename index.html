@@ -10,12 +10,10 @@
     
   </head>
   <body>    
-    <center>
-      <header>
-        <h1 class="header-title">TRAVEL HIGHLIGHTS</h1><br>
-        <p>Take only memories, leave only footprints</p>
-      </header>
-    </center>
+    <header>
+      <h1 class="header-title">TRAVEL HIGHLIGHTS</h1><br>
+      <p>Take only memories, leave only footprints</p>
+    </header>
     <div class="dashboard">
       ~~ |
       <a href="index.html">Home</a>  |
@@ -36,7 +34,7 @@
             </li>
             <li class="splide__slide">
               <div class="carousel-content">
-              <img src="././assets/images/Featured-photo-Bohol-Philippines-tourism-sm.jpg">
+              <img src="././assets/images/l_river.jpg">
               <div class="text-overlay">
                 <p>Loboc River</p>
               </div>
@@ -167,7 +165,7 @@
       </section>
     </div>
 
-    <div class="container">
+    <div class="container2">
       <section id="thumbnail-carousel" class="splide" aria-label="Beautiful Images">
         <div class="splide__track">
           <ul class="splide__list">
@@ -175,7 +173,7 @@
               <img src="././assets/images/Loboc River.jpg">
             </li>
             <li class="splide__slide">
-              <img src="././assets/images/Featured-photo-Bohol-Philippines-tourism-sm.jpg">
+              <img src="././assets/images/l_river.jpg">
             </li>
             <li class="splide__slide">
               <img src="././assets/images/loboc_river.jpg">
@@ -245,41 +243,39 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script>
-        document.addEventListener( 'DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function () {
+  // Set main carousel width and height as a percentage of the viewport
+  var mainCarouselWidthPercentage = 150; // Adjust as needed
+  var mainCarouselHeightPercentage = 68; // Adjust as needed
 
-          var mainCarouselWidth = 1500;
-          var mainCarouselHeight = 700;
-
-  var main = new Splide( '#main-carousel', {
-    type      : 'fade',
-    rewind    : true,
+  var main = new Splide('#main-carousel', {
+    type: 'fade',
+    rewind: true,
     pagination: false,
-    arrows    : false,
-    width: mainCarouselWidth,
-    height: mainCarouselHeight,
-  } );
+    arrows: false,
+    width: mainCarouselWidthPercentage + 'vw', // Use vw for viewport width
+    height: mainCarouselHeightPercentage + 'vh', // Use vh for viewport height
+  });
 
-
-  var thumbnails = new Splide( '#thumbnail-carousel', {
-    fixedWidth  : 100,
-    fixedHeight : 60,
-    gap         : 10,
-    rewind      : true,
-    pagination  : false,
+  var thumbnails = new Splide('#thumbnail-carousel', {
+    fixedWidth: 100,
+    fixedHeight: 60,
+    gap: 10,
+    rewind: true,
+    pagination: false,
     isNavigation: true,
-    breakpoints : {
+    breakpoints: {
       600: {
-        fixedWidth : 60,
+        fixedWidth: 60,
         fixedHeight: 44,
       },
     },
-  } );
+  });
 
-
-  main.sync( thumbnails );
+  main.sync(thumbnails);
   main.mount();
   thumbnails.mount();
-} );
+});
     </script>
   </body>
 </html>

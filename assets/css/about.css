@@ -7,6 +7,7 @@ body {
     height: 100vh;
     background : url('../images/bohol.jpg') center/cover no-repeat;
     opacity: 1;
+    z-index: 0;
 }
 
 header {
@@ -17,7 +18,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    padding: 20px;
+    z-index: 2;
 }
 
 .header-title {
@@ -33,24 +34,26 @@ header {
     color: white;
     position: fixed;
     width: 100%;
-    top: 150px; /* Adjust top position based on your header height */
+    top: 125px; /* Adjust top position based on your header height */
+    z-index: 3;
 }
 
 .dashboard a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 15px;
     font-size: 1em; /* Adjust the font size as needed */
 }
 
 .context {
     position: absolute;
-    top: 55%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px; /* Adjust padding for better visual appearance */
     background-color: rgba(94, 94, 94, 0.8); /* Semi-transparent white background */
     border-radius: 10px; /* Rounded corners for the container */
+    z-index: 0;
 }
 
 footer {
@@ -65,11 +68,9 @@ footer {
 
 @media (max-width: 800px) {
     .context {
-      width: 100%; /* Adjust for smaller screens */
+        width: 90%; /* Adjust for smaller screens */
     }
-    body {
-        width: 100%;
-    }
+    
     .dashboard {
         width: 100%;
     }   

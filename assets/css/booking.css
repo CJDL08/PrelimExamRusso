@@ -55,7 +55,7 @@ header {
     padding: 10px; /* Adjust padding for better visual appearance */
     background-color: rgba(221, 221, 221, 0.8); /* Semi-transparent white background */
     border-radius: 10px; /* Rounded corners for the container */
-    z-index: 5;
+    z-index: 0;
 }
 
 footer {

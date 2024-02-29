@@ -110,9 +110,10 @@
     text-align: center;
     padding: 5px;
     color: white;
-    position: fixed;
+    position:bottom ;
     width: 100%;
     bottom: 0;
+    z-index: 0;
   }
 
   @media (max-width: 100%) {
@@ -120,16 +121,16 @@
       width: 100%; /* Adjust for smaller screens */
     }
     .splide__track{
-      width: 100%;
+      width: 80%;
     }
     .carousel-content{
-      width: 100%;
+      width: 80%;
     }
     .dashboard{
       width: 100%;
     }
     .splide__slide{
-      width: 100%;
+      width: 80%;
     }
 
     .header-title, .text-overlay p {
